@@ -1,4 +1,6 @@
-# There are several Web sites on the Internet that allow users to perform queries on flight databases. 
+# FlightQuery
+
+There are several Web sites on the Internet that allow users to perform queries on flight databases. 
 
 * To make a query, a user specifies origin and destination cities, a departure data, and a departure time.
 * We can model such a database as a map, where keys are Flight Objects that contain fields corresponding to these 4 parameters.
@@ -10,3 +12,5 @@ Although a user typically wants to exactly match the origin and destination citi
 and certainly will have some flexibility for the departure time on a specific day.
 We can handle such a query by ordering our keys lexicographically. Then, an efficient implementation for a sorted map would be a good way to satisfy users’
 queries.
+
+Complete the FlightQuery class to implement the SortedTableMap interface and to return a requested flight within a flexible departure date.
